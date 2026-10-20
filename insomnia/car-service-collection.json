@@ -1,0 +1,84 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2026-10-20T00:00:00.000Z",
+  "__export_source": "insomnia.desktop.app:v13.3.1",
+  "resources": [
+    {
+      "_id": "wrk_carservice0000000000000000001",
+      "_type": "workspace",
+      "parentId": null,
+      "name": "Car Service API",
+      "description": "CRUD de carros (car-service)",
+      "scope": "collection"
+    },
+    {
+      "_id": "env_carservice0000000000000000001",
+      "_type": "environment",
+      "parentId": "wrk_carservice0000000000000000001",
+      "name": "Base Environment",
+      "data": { "base_url": "http://localhost:8080" }
+    },
+    {
+      "_id": "req_carservice0000000000000000001",
+      "_type": "request",
+      "parentId": "wrk_carservice0000000000000000001",
+      "name": "Listar carros",
+      "method": "GET",
+      "url": "{{ _.base_url }}/api/v1/cars",
+      "body": {},
+      "headers": [],
+      "metaSortKey": -5
+    },
+    {
+      "_id": "req_carservice0000000000000000002",
+      "_type": "request",
+      "parentId": "wrk_carservice0000000000000000001",
+      "name": "Buscar carro por id",
+      "method": "GET",
+      "url": "{{ _.base_url }}/api/v1/cars/1",
+      "body": {},
+      "headers": [],
+      "metaSortKey": -4
+    },
+    {
+      "_id": "req_carservice0000000000000000003",
+      "_type": "request",
+      "parentId": "wrk_carservice0000000000000000001",
+      "name": "Criar carro",
+      "method": "POST",
+      "url": "{{ _.base_url }}/api/v1/cars",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"color\": \"Preto\",\n  \"brand\": \"Honda\",\n  \"model\": \"Civic\",\n  \"year\": 2024\n}"
+      },
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "metaSortKey": -3
+    },
+    {
+      "_id": "req_carservice0000000000000000004",
+      "_type": "request",
+      "parentId": "wrk_carservice0000000000000000001",
+      "name": "Atualizar carro",
+      "method": "PUT",
+      "url": "{{ _.base_url }}/api/v1/cars/1",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"color\": \"Branco\",\n  \"brand\": \"Toyota\",\n  \"model\": \"Corolla\",\n  \"year\": 2023\n}"
+      },
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "metaSortKey": -2
+    },
+    {
+      "_id": "req_carservice0000000000000000005",
+      "_type": "request",
+      "parentId": "wrk_carservice0000000000000000001",
+      "name": "Remover carro",
+      "method": "DELETE",
+      "url": "{{ _.base_url }}/api/v1/cars/1",
+      "body": {},
+      "headers": [],
+      "metaSortKey": -1
+    }
+  ]
+}
