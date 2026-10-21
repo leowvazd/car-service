@@ -49,6 +49,13 @@ O relatório HTML do JaCoCo é gerado em `target/site/jacoco/index.html`. O buil
 
 A collection está em [`insomnia/car-service-collection.json`](insomnia/car-service-collection.json). Para importar: **Import → From File**. A variável `base_url` fica no ambiente base (`http://localhost:8080`).
 
+## Apresentação e documento
+
+Material de apoio (Java, API, Swagger e boas práticas) em [`docs/apresentacao`](docs/apresentacao):
+
+- [Slides (PowerPoint)](docs/apresentacao/java-api-swagger-boas-praticas.pptx)
+- [Documento (Word)](docs/apresentacao/java-api-swagger-boas-praticas.docx)
+
 ## Desenho técnico
 
 ```mermaid
